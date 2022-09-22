@@ -14,7 +14,7 @@ The approach to solve the above problem was to use python flask framework to cre
 
 # Usage
 
-* set {key} {value} : It will set key-value in {"key": {key} , "value": {value}}. set command only sets unique keys. If you try set an already present key it will return you a message : `{'message': 'set command can set unique key and values yash already exists'}`
+* set {key} {value} : It will set key-value in {"key": {key} , "value": {value}}. set command only sets unique keys. If you try set an already present key it will return you a message : `{'message': 'set command can set unique key and values hari already exists'}`
 
 * get {key} : It will fetches the value of the given key.
 
@@ -24,7 +24,7 @@ The approach to solve the above problem was to use python flask framework to cre
 
 * suball : It will return a list of all the key which has been subscribed. These key will response to any changes done via put.
 
-* put {key} {value} : It's an update command. If there is no key in the memory in the KV-store it will add the {key}-{value} pair. If there is any {key} present it will update that. If any key is under subscription-list and get update via put command it will return a message : `{'message': 'subscription key yash has been updated', 'key': 'yash', 'oldvalue': 'shah', 'newvalue': 'kumar'}`
+* put {key} {value} : It's an update command. If there is no key in the memory in the KV-store it will add the {key}-{value} pair. If there is any {key} present it will update that. If any key is under subscription-list and get update via put command it will return a message : `{'message': 'subscription key hari has been updated', 'key': 'hari', 'oldvalue': 'pc', 'newvalue': 'haripc'}`
 
 * subs {key} : It will set the key in subscription list any changes done to that {key} via put will response to changes.
 
@@ -43,7 +43,7 @@ curl -L get.docker.com | sh
 
 After Cloning the  directory this will look something like this :-
 
-![directory Structure](https://github.com/YashDevops/KV-Store/blob/master/images/direct-structure.png)
+![directory Structure](https://github.com/harishpc/kvstore_falconx/blob/master/images/direct-structure.png)
 
 
 - utility : It contains all the code for in memory saving key-value data
@@ -60,7 +60,7 @@ After Cloning the  directory this will look something like this :-
 #### 1. Clone the following Repo
 
 ```
-git clone https://github.com/YashDevops/KV-Store.git
+git clone https://github.com/harishpc/kvstore_falconx.git
 
 cd KV-Store
 ```
@@ -124,7 +124,8 @@ This will setup client for you.
 
 #### 5. check help `-h` or `--help`
 
-![help key](https://github.com/YashDevops/KV-Store/blob/master/images/help.png)
+![help key](https://github.com/harishpc/kvstore_falconx/blob/master/images/help.png)
+
 
 
 #### 6. Performing Operations
@@ -133,7 +134,7 @@ This will setup client for you.
 
 * To Set a key you can set it the following way
 
-![set key](https://github.com/YashDevops/KV-Store/blob/master/images/set.png)
+![set key](https://github.com/harishpc/kvstore_falconx/blob/master/images/set.png)
 
 
 
@@ -141,26 +142,26 @@ This will setup client for you.
 
 * To get a key you can set it the following way
 
-![get key](https://github.com/YashDevops/KV-Store/blob/master/images/get.png)
+![get key](https://github.com/harishpc/kvstore_falconx/blob/master/images/get.png)
 
 
 ####  Deleting a Key
 
 * To delete a key you can set it the following way
 
-![delete key](https://github.com/YashDevops/KV-Store/blob/master/images/del.png)
+![delete key](https://github.com/harishpc/kvstore_falconx/blob/master/images/del.png)
 
 
 ####  Get all the Key
 
 * To get all a key at a given time
 
-![get-all key](https://github.com/YashDevops/KV-Store/blob/master/images/getall.png)
+![get-all key](https://github.com/harishpc/kvstore_falconx/blob/master/images/getall.png)
 
 
 #### Subscribe get for any changes
 
-![sub key](https://github.com/YashDevops/KV-Store/blob/master/images/subs.png)
+![sub key](https://github.com/harishpc/kvstore_falconx/blob/master/images/subs.png)
 
 ##### To check subscription on key at any given time you can `suball` to get all the key in subscription is set.
 
